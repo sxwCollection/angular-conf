@@ -14,9 +14,9 @@ in this demo, a possible solution is shown.
 # use json file for configurations
 1. enable json parser
 in tsconfig.json/compilerOptions/
-add
-"resolveJsonModule": true,
-"esModuleInterop": true
+add  
+"resolveJsonModule": true,  
+"esModuleInterop": true  
 2. create app.config.json under src/assets
 3. import json file in service/components (see src/app/app.component.ts) or use InjectionToken(see app.config.ts)  
 
