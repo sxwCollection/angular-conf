@@ -4,12 +4,13 @@ then build with ng build --configuration=test and run with ng serve --configurat
 but if you build an oic image for the angular app and use it later on cloud,  
 the image is immutable and you cannot run it with different configurations.  
 in this demo, a possible solution is shown.  
+
 # idea
-1. create a json file for app configurations under src/assets  
+1. create a json file for app configurations under src/assets and use it in angular app  
 2. create an OCI image
 3. create ConfigMaps with the json file for different environments 
-4. mount the ConfigMaps to the pod
-5. 
+4. mount the ConfigMaps to the pod    
+
 # use json file for configurations
 1. enable json parser
 in tsconfig.json/compilerOptions/
