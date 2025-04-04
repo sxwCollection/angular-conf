@@ -21,7 +21,7 @@ add
 
 # create a ConfigMap
 
-'''
+```
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -35,10 +35,10 @@ yourAppConfig: |-
   "k1": "the url to earth",
   "k2": "every thing is ok"
 }
-'''
+```
 
 # mount the ConfigMap to the pod
-'''
+```
 volumes:
   - name: app-config
     configMap:
@@ -49,4 +49,4 @@ volumeMounts:
   - name: app-config
     mountPath: "/usr/share/nginx/html/assets/"
 
-''''
+```
